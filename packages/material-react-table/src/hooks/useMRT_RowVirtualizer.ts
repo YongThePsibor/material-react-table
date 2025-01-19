@@ -45,7 +45,7 @@ export const useMRT_RowVirtualizer = <
       draggingRow?.id
         ? realRows.findIndex((r) => r.id === draggingRow?.id)
         : undefined,
-    [draggingRow?.id],
+    [realRows, draggingRow?.id],
   );
 
   const rowCount = realRows.length;
